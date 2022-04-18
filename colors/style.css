@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2? family= Fira+Sans:wght@500 & family= Merriweather+Sans:wght@600 & family= Nunito:wght@200 & display= troca');
+*, *::after *::before {
+    box-sizing: border-box;
+    scroll-padding-top: 120px;
+}
+
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', serif;
+}
+
+img, iframe, video {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 5rem;
+    margin-bottom: -6rem;
+    font-weight: bolder;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: .4rem;
+}
+
+nav ul {
+    justify-content: space-around;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333222;
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+    padding: .4rem .5rem;
+    transition: all 0.5s;
+}
+
+nav a:hover {
+    color: rgb(255, 238, 60);
+    background-color: #000;
+    border-radius: 5px;
+}
+
+main, section {
+    height: 73vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.conteudo {
+    width: 90%;
+    margin: auto;
+    max-width: 800px;
+}
+
+.conteudo h1 {
+    text-transform: uppercase;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.conteudo p {
+    line-height: 2rem;
+}
+
+.cta {
+    text-transform: uppercase;
+    font-family: 'fira', sans-serif;
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 600;
+    background-color: rgb(255, 238, 60);
+    padding: 1.15rem 1.08rem;
+    line-height: 5.5rem;
+    color: #000;
+    letter-spacing: 3px;
+}
+
+.cta::before {
+    content: "+";
+    margin-right: .8rem;
+}
+
+.verde-agua {
+    background-color: #26ccca;
+    color: #fff;
+}
+
+#produto {
+    background-image: url(imagens/h13-background-img-1-min.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+#ux {
+    color: #fff;
+    background-image: url(imagens/h13-background-img-2-min.jpg);
+}
+
+#motion {
+    background-image: url(imagens/h13-background-img-3.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+#brand {
+    background-image: url(imagens/h13-background-img-4.jpg);
+    color: #fff;
+}
+
+#print {
+    color: #fff;
+    background-image: url(imagens/h13-background-img-5.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.texto {
+    color: #999;
+}
+
+#produto, #motion, #print {
+    background-attachment: fixed;
+}
+
+.conteudo {
+    width: 50%;
+    max-width: 800px;
+    margin: 0;
+    margin-left: 4rem;
+}
+
+@media screen and (min-width: 700px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 10vh;
+    }
+
+    .logo {
+        width: 25%;
+    }
+    header nav {
+        width: 70%;
+        max-width: 800px;
+    }
+    nav a {
+        font-size: 1.1rem;
+        padding: .7rem 1.0rem;
+    }
+    h1 {
+        font-size: 5rem;
+        margin-bottom: -6rem;
+    }
+}
