@@ -9,174 +9,162 @@
     <title>HelpPets - Página Inicial</title>
 
        <!-- Palavras-chave de página -->
-       <meta name="keywords" content="Adoção, Adote,casa de adoçao, doaçao de animais">
+       <link rel="shortcut icon" href="compressjpeg/Ícone-min.jpg">
+       <meta name="keywords" content="Adoção, Adote">
        <link rel="stylesheet" href="estilo.css">
        <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 </head>
 <body>
-  <!-- Cabeçalho com o menu dentro -->
-  <header>
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <img class="icone" src="compressjpeg/icone.definitivo.png" alt="Icone HelpPets"><a class="navbar-brand" href="#">HelpPets</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse  navegacao" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="adote.html">Adote</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="doe.html">Doe</a>
-          </li>
-         
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="buscar" placeholder="Buscar" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">🐾</button>
-
-
-        </form>
-      </div>
+  
+  <nav class="menu-cima py-2  border-bottom sticky-top" style="background-color: #8fd9d9">
+    <div class="container d-flex flex-wrap">
+      <ul class="nav me-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link  px-2 active" aria-current="page">Início</a></li>
+        <li class="nav-item"><a href="adote.html" class="nav-link  px-2">Adote</a></li>
+        <li class="nav-item"><a href="doe.html" class="nav-link  px-2">Doe</a></li>
+        <li class="nav-item"><a href="sobre.html" class="nav-link  px-2">Sobre</a></li>
+        
+      </ul>
+      <ul class="nav">
+        <li class="nav-item"><a href="login.html" class="nav-link  px-2">Entre</a></li>
+        <li class="nav-item"><a href="cadastro.html" class="nav-link  px-2">Cadastre-se</a></li>
+      </ul>
     </div>
   </nav>
+  <header class="py-3 mb-4 border-bottom ">
+    <div class="container d-flex flex-wrap justify-content-center">
+      <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        <span class="fs-4"> <img src="compressjpeg/icone.definitivo.png" alt="ícone HelpPets"> HelpPets</span>
+      </a>
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+        <input type="search" class="form-control" placeholder="Buscar" aria-label="Search">
+        
+      </form>
+    </div>
   </header>
-  <!-- Fim do cabeçalho com o menu -->
 
-
-<!-- Carrossel que fará parte do destaque -->
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="compressjpeg/dog-destaque-min.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="compressjpeg/dog-fundoamarelo-min.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="compressjpeg/destaque-mascara.jpg" class="d-block w-100" alt="...">
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-</div>
 
-<!-- Fim do carrossel -->
 
-<!-- Conteúdo principal do site onde estão os destaques que serão os animais mais antigos -->
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col destaque"></div>
-    </div>
-  </div>
 
 <main class="menu-inicio">
-  <div class="card-group ">
-    <div class="card">
-      <img src="compressjpeg/cat-1-min.jpg" class="card-img-top rounded" alt="img da gata Tatiana">
-      <div class="card-body">
 
-<!-- Destaque 1 -->
+  <div class="card-group">
+    <div class="card rounded">
+      <img src="compressjpeg/cat-1-min.jpg" class="card-img-top rounded" alt="Uma gata de três cores ,predominando o branco, seguido de um laranja, e preto, ela tem olhos verdes e está com as patas cruzadas.">
+
+      <div class="card-body">
         <ul>
           <li><h5 class="card-title">Tatiana</h5></li>
-          <li><p>Gato</p></li>
-          <li><p class="card-text">Sexo: Fêmea</p></li>
-          <li><p>Idade: 1 ano</p></li>
-          <li><p>Caracteres: Carinhosa, brincalhona e muito mimada.</p></li>
-          <li><p>*Se da bem com crianças e outros animais.</p></li>
+          <hr>
+          <li><p class="card-text"> <strong>Categoria:</strong> Gato</p></li>
+          <li><p class="card-text"> <strong>Sexo: </strong> Fêmea</p></li>
+          <li><p class="card-text"> <strong>Idade: </strong> 1 ano</p></li>
+          <li> <strong>Caracteristicas:</strong> <p class="card-text">Carinhosa e brincalhona.</p></li>
+          <li><strong>Observação:</strong><p class="card-text">*Se da bem com crianças e outros animais.</p></li>
+          <li><p><strong>Contato:</strong> 00 12345-6789</p></li>
+         <li><p><strong> Cidade:</strong> Belo Horizonte - MG</p></li> 
         </ul>
-
-        
-
-        <a href="#" class="card-link">Quero Adotar❤️</a>
-        
       </div>
+      <div class="card-footer">
+        <a href="#" class="card-link">Quero Adotar❤️</a></div>
     </div>
-    <!-- Fim Destaque 1 -->
 
-    <!-- Destaque 2 -->
-    <div class="card">
-      <img src="compressjpeg/dog-1-min.jpeg" class="card-img-top rounded" alt="Img do cachorrinho Chico">
+    <div class="card rounded">
+      <img src="compressjpeg/dog-1-min.jpeg" class="card-img-top rounded" alt="Um filhote de cachorro com a predominancia na cor bege, seguido de preto, ele está apoiado sob as patas trazeiras, e tem um olhar apelativo">
+
       <div class="card-body">
-
-
         <ul>
           <li><h5 class="card-title">Chico</h5></li>
-          <li><p>Cachorro</p></li>
-          <li><p class="card-text">Sexo: Macho</p></li>
-          <li><p>Idade: 8 meses</p></li>
-          <li><p>Caracteres: Gosta de brincar e carinho na barriga.</p></li>
+          <hr>
+          <li><p class="card-text"> <strong>Categoria:</strong> Cachorro</p></li>
+          <li><p class="card-text"> <strong>Sexo: </strong> Macho</p></li>
+          <li><p class="card-text"> <strong>Idade: </strong> 8 meses</p></li>
+          <li> <strong>Caracteristicas:</strong> <p class="card-text">Gosta de brincar e carinho na barriga.</p></li>
           <li><p>*Se da bem com crianças e outros animais.</p></li>
+          <li><strong>Observação:</strong><p class="card-text">*Se da bem com crianças e outros animais.</p></li>
+          <li><p><strong>Contato:</strong> 00 12345-6789</p></li>
+         <li><p><strong> Cidade:</strong> Patriarca - SP</p></li> 
         </ul>
-
-        <a href="#" class="card-link">Quero Adotar❤️</a>
       </div>
+      <div class="card-footer">
+        <a href="#" class="card-link">Quero Adotar❤️</a></div>
     </div>
-    <!-- Fim Destaque 2 -->
 
-    <!-- Destaque 3 -->
-    <div class="card">
-      <img src="compressjpeg/cat-2-min.jpg" class="card-img-top rounded" alt="Img do gatinho Garfield">
+    <div class="card rounded">
+      <img src="compressjpeg/cat-2-min.jpg" class="card-img-top rounded" alt="Um filhote de gato bem pequeno ele é da cor dourada e está sentado, possui grandes olhos redondos.">
+
       <div class="card-body">
-
-
         <ul>
           <li><h5 class="card-title">Garfield</h5></li>
-          <li><p>Gato</p></li>
-          <li><p class="card-text">Sexo: Macho</p></li>
-          <li><p>Idade: 4 meses</p></li>
-          <li><p>Caracteres: Ama carinha na bochecha.</p></li>
+          <hr>
+          <li><p class="card-text"> <strong>Categoria:</strong> Gato</p></li>
+          <li><p class="card-text"> <strong>Sexo: </strong> Macho</p></li>
+          <li><p class="card-text"> <strong>Idade: </strong> 4 meses</p></li>
+          <li> <strong>Caracteristicas:</strong> <p class="card-text">Ama carinho na bochecha.</p></li>
           <li><p>*Precisara de adaptação ao lar e alguns cuidados como a vacina.</p></li>
+          <li><strong>Observação:</strong><p class="card-text">*Precisara de adaptação ao lar e alguns cuidados como a vacina.</p></li>
+          <li><p><strong>Contato:</strong> 00 12345-6789</p></li>
+         <li><p><strong> Cidade:</strong> Itaquaquecetuba - SP</p></li> 
         </ul>
-        
-
-        
-        <a href="#" class="card-link">Quero Adotar❤️</a>
       </div>
+      <div class="card-footer">
+        <a href="#" class="card-link">Quero Adotar❤️</a></div>
     </div>
-    <!-- Fim Destaque 3 -->
-  
+  </div>
 </main>
-<!-- Final do conteúdo principal  -->
 
 <!-- Footer -->
-
 <footer>
 
-<footer class="text-center text-lg-start bg-light text-muted">
-  <!-- Section: Social media -->
-  <section
-    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  <footer class="text-center text-lg-start  text-muted">
+    <!-- Section: Social media -->
+    <section
+    class="d-flex justify-content-center justify-content-lg-between bg-light p-4 border-bottom"
   >
-  
     
-
-   
-  </section>
-  <!-- Section: Social media -->
-
-  <!-- Section: Links  -->
-  <section class="">
-
-  </section>
-  <!-- Section: Links  -->
-
-
-  <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2022 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">HelpPets.com</a>
-  </div>
-</footer>
-
+      
+  
+     
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+  
+    </section>
+    <!-- Section: Links  -->
+  
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold" href="index.html">HelpPets.com</a>
+    </div>
+  </footer>
 
 
 

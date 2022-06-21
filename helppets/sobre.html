@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A HelpPets nasceu com o intuito de ajudar o maior número possível de pets a encontrarem um lar cheio de amor e conforto.">
+    <meta name="description" content="HelpPets é um centro de ajuda para animais que precisam de um lar.">
+    <link rel="shortcut icon" href="compressjpeg/Ícone-min.jpg">
  
     <title>HelpPets - Página Inicial</title>
 
@@ -17,50 +18,125 @@
 </head>
 <body>
   
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <img class="icone" src="compressjpeg/icone.definitivo.png" alt="Icone HelpPets"><a class="navbar-brand" href="#">HelpPets</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="adote.html">Adote</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="doe.html">Doe</a>
-          </li>
-         
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="buscar" placeholder="Buscar" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">🐾</button>
-        </form>
-      </div>
+  <nav class="menu-cima py-2  border-bottom sticky-top" style="background-color: #8fd9d9">
+    <div class="container d-flex flex-wrap">
+      <ul class="nav me-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link  px-2 active" aria-current="page">Início</a></li>
+        <li class="nav-item"><a href="adote.html" class="nav-link  px-2">Adote</a></li>
+        <li class="nav-item"><a href="doe.html" class="nav-link  px-2">Doe</a></li>
+        <li class="nav-item"><a href="sobre.html" class="nav-link  px-2">Sobre</a></li>
+        
+      </ul>
+      <ul class="nav">
+        <li class="nav-item"><a href="login.html" class="nav-link  px-2">Entre</a></li>
+        <li class="nav-item"><a href="cadastro.html" class="nav-link  px-2">Cadastre-se</a></li>
+      </ul>
     </div>
   </nav>
+  <header class="py-3 mb-4 border-bottom ">
+    <div class="container d-flex flex-wrap justify-content-center">
+      <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        <span class="fs-4"> <img src="compressjpeg/icone.definitivo.png" alt="ícone HelpPets"> HelpPets</span>
+      </a>
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+        <input type="search" class="form-control" placeholder="Buscar" aria-label="Search">
+        
+      </form>
+    </div>
+  </header>
 
-<div>
-    <h2>
-        <p>A HelpPets é um projeto criado por uma equipe de estudantes com o intuito de ajudar os animias de rua.</p>
-    </h2>
+<section>
+<div class="container px-4 py-5" id="modalidades" style="border: 2px solid #FBB03B; border-radius: 5px;">
+  <h2 class="pb-2 border-bottom">A HelpPets é um projeto criado por uma equipe de estudantes com o intuito de ajudar os animias de rua.</h2>
+  <p>Há milhares de animais em situação de rua, que passam fome e frio, alguns nem chegam a conhecer o amor.
+    Com a adoção de animais podemos ajudar a diminuir cada vez mais essa situação em que eles se encontram.
+    Você adotando um animalzinho ganhara um amigo para vida toda, um companheiro para todos os momentos, que irá brincar com você, te pedir amor e carinho várias vezes ao dia, irá te ajudar nos momentos difíceis, sempre ficará ao seu lado.
+    Não maltrate animais de rua, nunca sabemos o  que eles estão passando ou já passaram.
+    Ajude-os. 
+    Adoção é um gesto de carinho. Adote.
+  </p>
 </div>
+
+<div class="container px-4 py-5" id="modalidades">
+  <h2 class="pb-2 border-bottom">Nossos Pets!</h2>
+
+  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" style="background-image: url(); background-size: cover;">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h4>Antonio e Amorinha</h4>
+          <div class="card" style="width: 18rem;">
+            <img src="compressjpeg/antonio-amorinha.jpg" class="card-img-top" alt="antonio-e-amorinha">
+           
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" style="background-image: url(); background-size: cover;">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h4>Gabriel e Gorda</h4>
+          <div class="card" style="width: 18rem;">
+            <img src="compressjpeg/gabriel-min.jpeg" class="card-img-top" alt="gabriel-e-gorda">
+          
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" style="background-image: url(); background-size: cover;">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h4>Palloma e Alberto</h4>
+          <div class="card" style="width: 18rem;">
+            <img src="compressjpeg/palloma-alberto-min.jpeg" class="card-img-top" alt="palloma-e-alberto">
+         
+          </div>
+                    
+        </div>
+      </div>
+    </div>
+
+
+</section>
+
+
+
 
 
 
 <!-- Footer -->
 <footer>
+
+  <footer class="text-center text-lg-start  text-muted">
+    <!-- Section: Social media -->
+    <section
+    class="d-flex justify-content-center justify-content-lg-between bg-light p-4 border-bottom"
+  >
+    
+      
+  
+     
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+  
+    </section>
+    <!-- Section: Links  -->
+  
+  
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-      © 2021 Copyright:
-      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    <div class="text-center p-4" style="background-color: rgb 0,0,0;">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold" href="index.html">HelpPets.com</a>
     </div>
   </footer>
   

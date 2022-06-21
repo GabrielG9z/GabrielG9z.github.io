@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página de doação, aqui você preencherá um breve formulário para cadastrar o pet que deseja doar.">
+    <link rel="shortcut icon" href="compressjpeg/Ícone-min.jpg">
  
-    <title>HelpPets - Página Inicial</title>
+    <title>HelpPets - Doe</title>
 
        <!-- Palavras-chave de página -->
+       
+       <meta name="description" content="Encontre seu melhor amigo pet na HelpPets">
        <meta name="keywords" content="Adoção, Adote">
        <link rel="stylesheet" href="estilo.css">
        <!-- CSS only -->
@@ -17,51 +20,300 @@
 </head>
 <body>
   
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <img class="icone" src="compressjpeg/icone.definitivo.png" alt="Icone HelpPets"><a class="navbar-brand" href="#">HelpPets</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="adote.html">Adote</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="doe.html">Doe</a>
-        </li>
-       
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
-        </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="buscar" placeholder="Buscar" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">🐾</button>
-        </form>
-      </div>
+  <nav class="menu-cima py-2  border-bottom sticky-top" style="background-color: #8fd9d9">
+    <div class="container d-flex flex-wrap">
+      <ul class="nav me-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link  px-2 active" aria-current="page">Início</a></li>
+        <li class="nav-item"><a href="adote.html" class="nav-link  px-2">Adote</a></li>
+        <li class="nav-item"><a href="doe.html" class="nav-link  px-2">Doe</a></li>
+        <li class="nav-item"><a href="sobre.html" class="nav-link  px-2">Sobre</a></li>
+        
+      </ul>
+      <ul class="nav">
+        <li class="nav-item"><a href="login.html" class="nav-link  px-2">Entre</a></li>
+        <li class="nav-item"><a href="cadastro.html" class="nav-link  px-2">Cadastre-se</a></li>
+      </ul>
     </div>
   </nav>
-
-
-   <!-- Footer -->
-<footer>
-    <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-      © 2021 Copyright:
-      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  <header class="py-3 mb-4 border-bottom ">
+    <div class="container d-flex flex-wrap justify-content-center">
+      <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        <span class="fs-4"> <img src="compressjpeg/icone.definitivo.png" alt="ícone HelpPets"> HelpPets</span>
+      </a>
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+        <input type="search" class="form-control" placeholder="Buscar" aria-label="Search">
+        
+      </form>
     </div>
-  </footer>
+  </header>
+
+  <section class="" style="background-color: white;">
+    <div class="limitador">
+      <div class="container-login100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
   
+    
+
+              <h3 class="mb-5">Preencha as Informações do Pet</h3>
+  
+              <div class="form-outline mb-2">
+                <label for="nome"></label>
+                <input type="text" name="nome" id="nome" class="form-control form-control-lg" placeholder="Nome">
+              </div>
+
+              <div class="form-outline mb-2">
+                <label for="nome"></label>
+                <input type="text" name="nome" id="nome" class="form-control form-control-lg" placeholder="Categoria">
+              </div>
+
+              <div class="form-outline mb-2">
+                <label for="nome"></label>
+                <input type="text" name="nome" id="nome" class="form-control form-control-lg" placeholder="Sexo">
+              </div>
+
+              <div>
+                <label for="data"></label>
+                <input type="text" name="data" id="data" class="form-control form-control-lg" placeholder="Idade Aproximada">
+              </div>
+
+              <div class="form-outline mb-2">
+                <label for="nome"></label>
+                <input type="text" name="nome" id="nome" class="form-control form-control-lg" placeholder="Caracteristicas">
+              </div>
+
+              <div class="form-outline mb-2">
+                <label for="telefone"></label>
+                <input type="tel" name="telefone" id="telefone" placeholder="Telefone: (00) 12345-6789" class="form-control form-control-lg" required>
+              </div>
+          
+              <div class="form-outline mb-2">
+                <label for="cep"></label>
+                <input type="text" name="cep" id="cep" maxlength="9" class="form-control form-control-lg" placeholder="CEP" required>
+              </div>
+              
+              <div class="form-outline mb-2">
+                <label for="endereco"></label>
+                <input type="text" name="endereco" id="endereco" size="30" class="form-control form-control-lg" placeholder="Endereço">
+              </div>
+          
+              <div class="form-outline mb-2">
+                <label for="bairro"></label>
+                <input type="text" name="bairro" id="bairro" class="form-control form-control-lg" placeholder="Bairro">
+              </div>
+          
+              <div class="form-outline mb-2">
+                <label for="cidade"></label>
+                <input type="text" name="cidade" id="cidade" class="form-control form-control-lg" placeholder="Cidade">
+              </div>
+          
+              <div class="form-outline mb-2">
+                <label for="estado"></label>
+                <input type="text" name="estado" id="estado" class="form-control form-control-lg" placeholder="Estado">
+              </div>
+
+              <div>
+                <label for="mensagem" ></label>
+                <span id="maximo"> (restam <b id="caracteres">200</b> caracteres)</span>
+                <textarea name="mensagem" id="mensagem" cols="20" rows="5" maxlength="200" class="form-control form-control-lg" placeholder="Informações" required></textarea>
+              </div>
+
+              <p class="my-4"></p>
+         
+              <div class="mb-3">
+                <label for="formFile" class="form-label" style="border-bottom: #FBB03B 3px solid;"><b>Envie uma foto do pet!</b></label>
+                <input class="form-control" type="file" id="formFile">
+              </div>
+
+              
+              <p class="my-4"></p>
+
+              <button class="btn btn-black btn-lg btn-block" style="background-color: #FBB03B" type="submit">Fazer Cadastro🐾</button>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Fim do formulario -->
+
+  <!-- Footer -->
+  <footer>
+
+    <footer class="text-center text-lg-start  text-muted">
+      <!-- Section: Social media -->
+      <section
+      class="d-flex justify-content-center justify-content-lg-between bg-light p-4 border-bottom"
+    >
+      
+        
+    
+       
+      </section>
+      <!-- Section: Social media -->
+    
+      <!-- Section: Links  -->
+      <section class="">
+    
+      </section>
+      <!-- Section: Links  -->
+    
+    
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold" href="index.html">HelpPets.com</a>
+      </div>
+    </footer>
 
 
 <script src="projeto-integrador.js"></script>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<script src="plugins/vanilla-masker.min.js"></script>
+
+    <script>
+        VMasker(document.querySelector("#cep")).maskPattern("99999-999");
+
+        function inputHandler(masks, max, event) {
+        var c = event.target;
+        var v = c.value.replace(/\D/g, '');
+        var m = c.value.length > max ? 1 : 0;
+        VMasker(c).unMask();
+        VMasker(c).maskPattern(masks[m]);
+        c.value = VMasker.toPattern(v, masks[m]);
+        }
+
+        var telMask = ['(99) 9999-99999', '(99) 99999-9999'];
+        var tel = document.querySelector('#telefone');
+        VMasker(tel).maskPattern(telMask[0]);
+        tel.addEventListener('input', inputHandler.bind(undefined, telMask, 14), false);
+
+        var docMask = ['999.999.999-999', '99.999.999/9999-99'];
+        var doc = document.querySelector('#documento');
+        VMasker(doc).maskPattern(docMask[0]);
+        doc.addEventListener('input', inputHandler.bind(undefined, docMask, 14), false);
+    </script>
+
+
+
+<script src="plugins/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            function limpa_formulário_cep() {
+                // Limpa valores do formulário de cep.
+                $("#endereco").val("");
+                $("#bairro").val("");
+                $("#cidade").val("");
+                $("#estado").val("");
+            }
+            
+            //Quando o campo cep perde o foco.
+            $("#cep").blur(function() {
+
+                //Nova variável "cep" somente com dígitos.
+                var cep = $(this).val().replace(/\D/g, '');
+
+                //Verifica se campo cep possui valor informado.
+                if (cep != "") {
+
+                    //Expressão regular para validar o CEP.
+                    var validacep = /^[0-9]{8}$/;
+
+                    //Valida o formato do CEP.
+                    if(validacep.test(cep)) {
+
+                        //Preenche os campos com "..." enquanto consulta webservice.
+                        $("#endereco").val("...");
+                        $("#bairro").val("...");
+                        $("#cidade").val("...");
+                        $("#estado").val("...");
+                        $("#status").text("CEP encontrado").css('color', 'black');
+
+                        
+
+                        //Consulta o webservice viacep.com.br/
+                        $.getJSON("https://viacep.com.br/ws/"+ cep +"/json/?callback=?", function(dados) {
+
+                            if (!("erro" in dados)) {
+                                //Atualiza os campos com os valores da consulta.
+                                $("#endereco").val(dados.logradouro);
+                                $("#bairro").val(dados.bairro);
+                                $("#cidade").val(dados.localidade);
+                                $("#estado").val(dados.uf);
+                                $("#status").text(" ").css('color', 'black');
+                            } //end if.
+                            else {
+                                //CEP pesquisado não foi encontrado.
+                                limpa_formulário_cep();
+                                $("#status").text("CEP não encontrado.").css('color', 'red');
+                            }
+                        });
+                    } //end if.
+                    else {
+                        //cep é inválido.
+                        limpa_formulário_cep();
+                        $("#status").text("Formato de CEP inválido.").css('color', 'red');
+                    }
+                } //end if.
+                else {
+                    //cep sem valor, limpa formulário.
+                    limpa_formulário_cep();
+                }
+            });
+        });
+        </script>
+
+
+
+        <!-- Criando um contador de caracteres -->
+        <script>
+            const spanMaximo = $("#maximo");
+            const bCaracteres = $("#caracteres");
+            const textMensagem = $("#mensagem");
+
+            // determinando a quantidade de caracteres
+            let quantidade = 100;
+
+            // Ouvinte de evento
+            textMensagem.on ("input", function() {
+
+                let conteudo = textMensagem.val();
+
+                // criando a contagem regressiva
+                 let contagem = quantidade - conteudo.length;
+                 // console.log(contagem);
+
+                 // Exibindo o número no HTML
+                 bCaracteres.text(contagem);
+
+
+                 if (contagem == 0) {
+                 spanMaximo.css('color', 'red');
+                 spanMaximo.text("Limite de caracteres alcançado");
+                 } else {
+                 spanMaximo.css('color', 'black');
+                 spanMaximo.html("(restam <b id='caracteres'>" +contagem+ "</b> caracteres)");
+                 }
+            });
+
+        </script>
+        
 
 </body>
 </html>

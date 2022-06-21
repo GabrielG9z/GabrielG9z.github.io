@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página de adoção, aqui voce pode adotar um pet após preencher um formulário.">
  
-    <title>HelpPets - Página Inicial</title>
+    <title>HelpPets - Adote</title>
 
        <!-- Palavras-chave de página -->
+       <link rel="shortcut icon" href="compressjpeg/Ícone-min.jpg">
        <meta name="keywords" content="Adoção, Adote">
+       <meta name="description" content="Encontre seu melhor amigo pet na HelpPets">
        <link rel="stylesheet" href="estilo.css">
        <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -17,204 +19,247 @@
 </head>
 <body>
   <!-- Barra de navegação -->
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <img class="icone" src="compressjpeg/icone.definitivo.png" alt="Icone HelpPets"><a class="navbar-brand" href="#">HelpPets</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="adote.html">Adote</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="doe.html">Doe</a>
-          </li>
-         
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="buscar" placeholder="Buscar" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">🐾</button>
-        </form>
-      </div>
+  <nav class="menu-cima py-2  border-bottom sticky-top" style="background-color: #8fd9d9">
+    <div class="container d-flex flex-wrap">
+      <ul class="nav me-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link  px-2 active" aria-current="page">Início</a></li>
+        <li class="nav-item"><a href="adote.html" class="nav-link  px-2">Adote</a></li>
+        <li class="nav-item"><a href="doe.html" class="nav-link  px-2">Doe</a></li>
+        <li class="nav-item"><a href="sobre.html" class="nav-link  px-2">Sobre</a></li>
+        
+      </ul>
+      <ul class="nav">
+        <li class="nav-item"><a href="login.html" class="nav-link  px-2">Entre</a></li>
+        <li class="nav-item"><a href="cadastro.html" class="nav-link  px-2">Cadastre-se</a></li>
+      </ul>
     </div>
   </nav>
+  <header class="py-3 mb-4 border-bottom">
+    <div class="container d-flex flex-wrap justify-content-center">
+      <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        <span class="fs-4"> <img src="compressjpeg/icone.definitivo.png" alt="ícone HelpPets"> HelpPets</span>
+      </a>
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+        <input type="search" class="form-control" placeholder="Buscar" aria-label="Search">
+        
+      </form>
+    </div>
+  </header>
 <!-- Fim da Barra de navegação -->
+
+
+<!-- Cards -->
+
 
 <!-- Conteúdo principal -->
 <!-- Primeiro item -->
-  <main class="menu-inicio">
-    <div class="card-group">
-      <div class="card">
-        <img src="compressjpeg/cat-3-min.jpeg" class="card-img-top rounded" alt="...">
-        <div class="card-body">
+<main class="menu-inicio">
+  <div class="card-group">
+    <div class="card rounded">
 
-          <ul>
-            <li><h5 class="card-title">Branquinha</h5></li>
-            <hr>
-            <li><p class="card-text">Gato</p></li>
-            <li><p class="card-text">Sexo: Fêmea</p></li>
-            <li><p class="card-text">Idade: 2 anos</p></li>
-            <li><p class="card-text">Caracteres: Vacinada, gosta de chamego e ama tomar leite.</p></li>
-            <li><p class="card-text">*Se da bem com crianças e outros animais.</p></li>
-          </ul>
+      <img src="compressjpeg/cat-3-min.jpeg" class="card-img-top rounded" alt="Gata branca sentada">
 
-          <a href="#" class="card-link">Quero Adotar❤️</a>
-        </div>
-        <!-- Fim do primeiro item -->
-        <!-- inicio do segundo item -->
+      <div class="card-body">
+        <ul>
+          <li><h5 class="card-title">Branquinha</h5></li>
+          <hr>
+          <li><p class="card-text"> <strong>Categoria:</strong> Gato</p></li>
+          <li><p class="card-text"> <strong>Sexo: </strong> Fêmea</p></li>
+          <li><p class="card-text"> <strong>Idade: </strong> 2 anos</p></li>
+          <li> <strong>Caracteristicas:</strong><p class="card-text"> Vacinada, gosta de chamego e ama tomar leite.</p></li>
+          <li><strong>Observação:</strong><p class="card-text">*Se da bem com crianças e outros animais.</p></li>
+          <li><p><strong>Contato:</strong> 00 12345-6789</p></li>
+          <li><p><strong> Cidade:</strong> Tatuapé - SP</p></li>
+        </ul>
       </div>
-      <div class="card">
-        <img src="compressjpeg/cat-5.jpeg-min.jpeg" class="card-img-top rounded" alt="...">
-        <div class="card-body">
+      <div class="card-footer">
+        <a href="#" class="card-link">Quero Adotar❤️</a>      </div>
+    </div>
 
+      <!-- fim do segundo item -->
+      <!-- inicio do terceiro item -->
+      <div class="card rounded">
+
+        <img src="compressjpeg/cat-5.jpeg-min.jpeg" class="card-img-top rounded" alt="Um gato preto ao fundo branco usando uma gravata vermelha">
+
+        <div class="card-body">
           <ul>
             <li><h5 class="card-title">Banguela</h5></li>
             <hr>
-            <li><p class="card-text">Gato</p></li>
-            <li><p class="card-text">Sexo: Macho</p></li>
-            <li><p class="card-text">Idade: 1 anos</p></li>
-            <li><p class="card-text">Caracteres: Gosta de dormir na coberta e gosta de colo, vacinado.</p></li>
-            <li><p>*Se da bem com crianças e outros animais.</p></li>
+            <li><p class="card-text"> <strong>Categoria:</strong> Gato</p></li>
+            <li><p class="card-text"> <strong>Sexo: </strong> Macho</p></li>
+            <li><p class="card-text"> <strong>Idade: </strong> 1 ano</p></li>
+            <li> <strong>Caracteristicas:</strong> <p class="card-text">Gosta de dormir na coberta e gosta de colo, vacinado.</p></li>
+            <li><strong>Observação:</strong><p class="card-text">*Se da bem com crianças e outros animais.</p></li>
+            <li><p><strong>Contato:</strong> 00 12345-6789</p></li>
+           <li><p><strong> Cidade:</strong> Barra Funda - SP</p></li> 
           </ul>
-         
-          <a href="#" class="card-link">Quero Adotar❤️</a>
         </div>
+        <div class="card-footer">
+          <a href="#" class="card-link">Quero Adotar❤️</a></div>
       </div>
-      <!-- fim do segundo item -->
-      <!-- inicio do terceiro item -->
-      <div class="card">
-        <img src="compressjpeg/cat-4-min.jpeg" class="card-img-top rounded" alt="...">
-        <div class="card-body">
 
+      <div class="card rounded">
+
+        <img src="compressjpeg/cat-4-min.jpeg" class="card-img-top rounded" alt="Três filhotes de gato olhando para o alto sentados em um cobertor azul">
+
+        <div class="card-body">
           <ul>
             <li><h5 class="card-title">Paçoca, Girassol, Julio</h5></li>
             <hr>
-            <li><p>Gato, Gato, Gato</p></li>
-            <li><p class="card-text">Sexo: Macho, Fêmea, Macho</p></li>
-            <li><p>Idade: 3 meses, 3 meses, 3 meses</p></li>
-            <li><p>Caracteres: 3 irmãos que gostam de carinho e de dormir juntos.</p></li>
-            <li><p>*Precisara de adaptação ao lar e alguns cuidados como a vacina.</p></li>
+            <li><p class="card-text"> <strong>Categoria:</strong> Gato</p></li>
+            <li><p class="card-text"> <strong>Sexo: </strong> Macho, Fêmea</p></li>
+            <li><p class="card-text"> <strong>Idade: </strong> 3 meses</p></li>
+            <li> <strong>Caracteristicas:</strong>  <p class="card-text">3 irmãos que gostam de carinho e de dormir juntos.</p></li>
+            <li><strong>Observação:</strong><p class="card-text">*Precisara de adaptação ao lar e alguns cuidados como a vacina.</p></li>
+            <li><p><strong>Contato:</strong> 00 12345-6789</p></li>
+            <li><p><strong> Cidade:</strong> Barra Funda - SP</p></li>
           </ul>
-
-          <a href="#" class="card-link">Quero Adotar❤️</a>
         </div>
+        <div class="card-footer">
+          <a href="#" class="card-link">Quero Adotar❤️</a>      </div>
       </div>
 
-      <div class="card">
-        <img src="compressjpeg/dog-3-min.jpeg" class="card-img-top rounded" alt="...">
-        <div class="card-body">
+      <div class="card rounded">
 
+        <img src="compressjpeg/dog-3-min.jpeg" class="card-img-top rounded" alt="Filhote de cachorro com um olhar apelativo dentro de uma gaiola">
+
+        <div class="card-body">
           <ul>
             <li><h5 class="card-title">Pitoco</h5></li>
             <hr>
-            <li><p>Cachorro</p></li>
-            <li><p class="card-text">Sexo: Macho</p></li>
-            <li><p>Idade: 7 meses</p></li>
-            <li><p>Caracteres: Ama comida do(a) dono(a) e de dormir na cama.</p></li>
-            <li><p>*Precisara de adaptação ao lar e alguns cuidados como a vacina, se da bem com crianças e outros animais.</p></li>
+            <li><p class="card-text"> <strong>Categoria:</strong> Cachorro</p></li>
+            <li><p class="card-text"> <strong>Sexo: </strong> Macho</p></li>
+            <li><p class="card-text"> <strong>Idade: </strong> 7 meses</p></li>
+            <li> <strong>Caracteristicas:</strong>  <p class="card-text">Ama comida do(a) dono(a) e de dormir na cama.</p></li>
+            <li><strong>Observação:</strong><p class="card-text">*Precisara de adaptação ao lar e alguns cuidados como a vacina, se da bem com crianças e outros animais.</p></li>
+            <li><p><strong>Contato:</strong> 00 12345-6789</p></li>
+            <li><p><strong> Cidade:</strong> Vitória - ES</p></li>
           </ul>
-
-          <a href="#" class="card-link">Quero Adotar❤️</a>
         </div>
+        <div class="card-footer">
+          <a href="#" class="card-link">Quero Adotar❤️</a></div>
       </div>
-    </div>
   </main>
 
   <main class="menu-inicio">
     <div class="card-group">
-      <div class="card">
-        <img src="compressjpeg/dog-2-min.jpg" class="card-img-top rounded" alt="...">
-        <div class="card-body">
+      <div class="card rounded">
 
+        <img src="compressjpeg/dog-6-min.jpeg" class="card-img-top rounded" alt="Cadela viralatas da cor caramelo deitada com duas bolinhas de brinquedo ">
+
+        <div class="card-body">
+          <ul>
+            <li><h5 class="card-title">Penny</h5></li>
+            <hr>
+            <li><p class="card-text"> <strong>Categoria:</strong> Cachorro</p></li>
+            <li><p class="card-text"> <strong>Sexo: </strong> Fêmea</p></li>
+            <li><p class="card-text"> <strong>Idade: </strong> 7 meses</p></li>
+            <li> <strong>Caracteristicas:</strong> <p class="card-text"> Muito extrovertida e brincalhona.</p></li>
+            <li><strong>Observação:</strong><p class="card-text">*Já está vacinada, e é muito educada.</p></li>
+            <li><p><strong>Contato:</strong> 00 12345-6789</p></li>
+            <li><p><strong> Cidade:</strong> Barra da Tijuca - RJ</p></li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="card-link">Quero Adotar❤️</a>      </div>
+      </div>
+
+
+      <div class="card rounded">
+
+        <img src="compressjpeg/dog-2-min.jpg" class="card-img-top rounded" alt="Três filhotes de cachorro dois da cor caramelo e um da cor preta um ao lado do outro.">
+
+        <div class="card-body">
           <ul>
             <li><h5 class="card-title">Bart, Lisa, Maggie</h5></li>
             <hr>
-            <li><p class="card-text">Cachorro, Cachorro, Cachorro</p></li>
-            <li><p class="card-text">Sexo: Macho, Fêmea, Fêmea</p></li>
-            <li><p>Idade: 2 meses, 2 meses, 2 meses</p></li>
-            <li><p>Caracteres: 3 irmãos que brincam juntos e gostam de arroz com molho.</p></li>
-            <li><p>*Precisara de adaptação ao lar e alguns cuidados como a vacina.</p></li>
-          </ul>
-
-          <a href="#" class="card-link">Quero Adotar❤️</a>
-          
+            <li><p class="card-text"> <strong>Categoria:</strong> Cachorro</p></li>
+            <li><p class="card-text"> <strong>Sexo: </strong> Macho/Fêmea</p></li>
+            <li><p class="card-text"> <strong>Idade: </strong> 2 meses</p></li>
+            <li> <strong>Caracteristicas:</strong> <p class="card-text">3 irmãos que brincam juntos e gostam de arroz com molho.</p></li>
+            <li><strong>Observação:</strong><p class="card-text">*Precisara de adaptação ao lar e alguns cuidados como a vacina.</p></li>
+            <li><p><strong>Contato:</strong> 00 12345-6789</p></li>
+            <li><p><strong> Cidade:</strong> Salvador - BH</p></li>
+        </ul>
         </div>
+        <div class="card-footer">
+          <a href="#" class="card-link">Quero Adotar❤️</a>      </div>
       </div>
-      <div class="card">
-        <img src="compressjpeg/dog-4-min.jpeg" class="card-img-top rounded" alt="...">
-        <div class="card-body">
 
+      <div class="card rounded">
+
+        <img src="compressjpeg/dog-4-min.jpeg" class="card-img-top rounded" alt="Cadela viralatas da cor cinza com o olhar apelativo olhando para câmera.">
+
+        <div class="card-body">
           <ul>
             <li><h5 class="card-title">Amora</h5></li>
             <hr>
-            <li><p>Cachorro</p></li>
-            <li><p class="card-text">Sexo: Fêmea</p></li>
-            <li><p>Idade: 3 ano</p></li>
-            <li><p>Caracteres: Ja foi maltratada com seu antigo dono, mas, ama um carinho.</p></li>
-            <li><p>*Precisara de adaptação ao lar.</p></li>
+            <li><p class="card-text"> <strong>Categoria:</strong> Cachorro</p></li>
+            <li><p class="card-text"> <strong>Sexo: </strong> Fêmea</p></li>
+            <li><p class="card-text"> <strong>Idade: </strong> 2 Anos</p></li>
+            <li> <strong>Caracteristicas:</strong>  <p class="card-text">Ja foi maltratada com seu antigo dono, mas, ama um carinho.</p></li>
+            <li><strong>Observação:</strong><p class="card-text">*Precisara de adaptação ao lar.</p></li>
+            <li><p><strong>Contato:</strong> 00 12345-6789</p></li>
+            <li><p><strong> Cidade:</strong> Porto Alegre - RS</p></li>
           </ul>
- 
-          <a href="#" class="card-link">Quero Adotar❤️</a>
         </div>
+        <div class="card-footer">
+          <a href="#" class="card-link">Quero Adotar❤️</a>      </div>
       </div>
 
+      <div class="card rounded">
 
-      <div class="card">
-        <img src="compressjpeg/cat-6-min.jpg" class="card-img-top rounded" alt="...">
+        <img src="compressjpeg/cat-6-min.jpg" class="card-img-top rounded" alt="Filhote de gato da cor preta com os olhos verdes olhando para a câmera.">
+
         <div class="card-body">
-
           <ul>
             <li><h5 class="card-title">Pantera</h5></li>
             <hr>
-            <li><p>Gato</p></li>
-            <li><p class="card-text">Sexo: Macho</p></li>
-            <li><p>Idade: 5 meses</p></li>
-            <li><p>Caracteres: Ama sachê de atum e tirar um cochilo ao lado do(a) dono(a).</p></li>
-            <li><p>*Precisara de adaptação ao lar e alguns cuidados como a vacina.</p></li>
-          </ul>         
-
-          <a href="#" class="card-link">Quero Adotar❤️</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="compressjpeg/dog-6-min.jpeg" class="card-img-top rounded" alt="...">
-        <div class="card-body">
-
-          <ul>
-            <li><h5 class="card-title">Mirabel</h5></li>
-            <hr>
-            <li><p>Cachorro</p></li>
-            <li><p class="card-text">Sexo: Fêmea</p></li>
-            <li><p>Idade: 6 anos</p></li>
-            <li><p>Caracteres: Gosta de passear ao sol da manhã e comer ração de carne.</p></li>
-            <li><p>*Se da bem com crianças e outros animais.</p></li>
+            <li><p class="card-text"> <strong>Categoria:</strong> Cachorro</p></li>
+            <li><p class="card-text"> <strong>Sexo: </strong> Macho</p></li>
+            <li><p class="card-text"> <strong>Idade: </strong> 5 meses</p></li>
+            <li> <strong>Caracteristicas:</strong> <p class="card-text">Ama sachê de atum e tirar um cochilo ao lado do(a) dono(a).</p></li>
+            <li><strong>Observação:</strong><p class="card-text">*Precisara de adaptação ao lar e alguns cuidados como a vacina.</p></li>
+            <li><p><strong>Contato:</strong> 00 12345-6789</p></li>
+            <li><p><strong> Cidade:</strong> Florianópolis - SC</p></li>
           </ul>
-
-          <a href="#" class="card-link">Quero Adotar❤️</a>
         </div>
+        <div class="card-footer">
+          <a href="#" class="card-link">Quero Adotar❤️</a>      </div>
       </div>
-    </div>
   </main>
   <!-- Fim do conteúdo principal -->
 
 
   <!-- Footer -->
-<footer>
-  <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2021 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-  </div>
-</footer>
+
+    <footer class="text-center text-lg-start text-muted">
+      <!-- Section: Social media -->
+      <section
+      class="d-flex justify-content-center justify-content-lg-between bg-light p-4 border-bottom"
+    >
+      
+        
+    
+       
+      </section>
+      <!-- Section: Social media -->
+    
+      <!-- Section: Links  -->
+      <section class="">
+    
+      </section>
+      <!-- Section: Links  -->
+    
+    
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold" href="index">HelpPets.com</a>
+      </div>
+    </footer>
 
   
   <script src="projeto-integrador.js"></script>

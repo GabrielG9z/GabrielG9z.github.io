@@ -1,20 +1,33 @@
-.menu-inicio{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 50px;
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Sarabun&family=Source+Sans+Pro&display=swap');
+
+
+.menu-cima a:hover{
+background-color: #FBB03B;
+border-radius: 5px;
+color: #fff;
+transition: 0.6s;
+padding: 5px;
 }
 
-.destaque {
- background-image: url(compressjpeg/dog-destaque.jpg);
-height: 450px;
-
+.menu-cima{
+    font-weight: bold;
+    font-family: 'IBM Plex sans';
 }
 
+
+
+.menu-baixo a, .menu-cima a{
+    color: #000;
+}
 
 
 main a:hover{
+    background-color: #FBB03B;
     color: #fff;
-    font-size: 17px;
+    font-size: 16px;
     transition: 0.5s;
 }
 
@@ -32,10 +45,12 @@ main img {
     
 }
 
-.navegacao ul, li{
-display: flex;
-margin-left: 110px;
+
+.card-body ul li {
+    
+    list-style: none;
 }
+
 
 
 .card-text{
@@ -44,6 +59,7 @@ margin-left: 110px;
     text-align: left;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-family: 'source sans pro';
 }
 
 .card-link {
@@ -57,6 +73,7 @@ margin-left: 110px;
     padding-top: 10px;
     padding-left: 80px;
     padding-right: 80px;
+    
 }
 
 main a {
@@ -69,6 +86,51 @@ ul li {
     margin-left: 10px;
 }
 
-h5 {
-    text-align: center;
+
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+
+footer {
+    
+    background-color: #59ABA7;
+    color: #fff;
+}
+
+
+
+/* Fundo login */
+.container-login100 {
+    width: 100%;
+    min-height: 100vh;
+   
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+   
+    background: -webkit-linear-gradient(left,#98fff8,#f7a2a2);
+  
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+footer a {
+    color: #000;
 }
