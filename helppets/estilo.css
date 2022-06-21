@@ -1,0 +1,74 @@
+.menu-inicio{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.destaque {
+ background-image: url(compressjpeg/dog-destaque.jpg);
+height: 450px;
+
+}
+
+
+
+main a:hover{
+    color: #fff;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+main img {
+    margin-top: 2px;
+    border: 1px solid #59ABA7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-inicio .card{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    
+}
+
+.navegacao ul, li{
+display: flex;
+margin-left: 110px;
+}
+
+
+.card-text{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card-link {
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    background-color:#59ABA7;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+main a {
+    display: flex;
+    align-items: center;
+
+}
+
+ul li {
+    margin-left: 10px;
+}
+
+h5 {
+    text-align: center;
+}
